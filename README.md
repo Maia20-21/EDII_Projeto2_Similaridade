@@ -1,0 +1,1 @@
+# EDII_Projeto2_Similaridade
