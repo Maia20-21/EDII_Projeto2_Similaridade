@@ -11,8 +11,6 @@ Sistema que identifica o grau de similaridade entre documentos textuais utilizan
 | Sofia de Oliveira Cavalcanti | 10723361 |
 | Vinicius Pereira Rodrigues | 10729470 |
 
-**Professor:** `Prof. Dr. Jean M. Laine`
-
 **Turma:** `04G`
 
 ---
