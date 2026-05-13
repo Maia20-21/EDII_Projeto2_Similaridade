@@ -1,15 +1,15 @@
-# Projeto Pratico 2 de Estrutura de Dados II
+# Projeto Prático 2 de Estrutura de Dados II
 ## Verificador de Similaridade de Textos com Hash e AVL
 
-Sistema que identifica o grau de similaridade entre documentos textuais utilizando estruturas de dados manuais: Tabelas Hash (endereçamento aberto) e Arvores AVL.
+Sistema que identifica o grau de similaridade entre documentos textuais utilizando estruturas de dados manuais: Tabelas Hash (endereçamento aberto) e Árvores AVL.
 
-### Informacoes do Grupo
+### Informações do Grupo
 
 | Integrante | RA |
 | :--- | :--- |
 | Bruna Amorim Maia | 10431883 |
 | Sofia de Oliveira Cavalcanti | 10723361 |
-| Vinicius Pereira Rodrigues | 10729470 |
+| Vinícius Pereira Rodrigues | 10729470 |
 
 **Turma:** `04G`
 
@@ -40,25 +40,25 @@ Sistema que identifica o grau de similaridade entre documentos textuais utilizan
 └── resultado.txt
 ```
 
-- **`src/`**: Codigo-fonte Java.
+- **`src/`**: Código-fonte Java.
 - **`documentos/`**: Arquivos `.txt` a serem processados.
 - **`recursos/`**: Arquivo auxiliar com lista de stop words.
-- **`resultado.txt`**: Arquivo de saida gerado automaticamente com os resultados da analise.
+- **`resultado.txt`**: Arquivo de saída gerado automaticamente com os resultados da análise.
 
 ---
 
-### Detalhes da Implementacao
+### Detalhes da Implementação
 
-| Componente | Descricao |
+| Componente | Descrição |
 | :--- | :--- |
-| **Tabela Hash** | Endereçamento aberto com sondagem linear. Funcoes de dispersao: DJB2 e FNV-1a. Redimensionamento automatico (fator de carga > 0.7). |
-| **Arvore AVL** | Chave composta (similaridade + nomes dos documentos). Balanceamento com rotacoes simples e duplas. |
-| **Metrica** | Indice de Jaccard: \|A ∩ B\| / \|A ∪ B\| |
-| **Pre-processamento** | Normalizacao (minusculas + remocao de acentos), filtragem de stop words, filtro de tamanho minimo (3 letras) e stemming basico em portugues. |
+| **Tabela Hash** | Endereçamento aberto com sondagem linear. Funções de dispersão: DJB2 e FNV-1a. Redimensionamento automático (fator de carga > 0.7). |
+| **Árvore AVL** | Chave composta (similaridade + nomes dos documentos). Balanceamento com rotações simples e duplas. |
+| **Métrica** | Índice de Jaccard: \|A ∩ B\| / \|A ∪ B\| |
+| **Pré-processamento** | Normalização (minúsculas + remoção de acentos), filtragem de stop words, filtro de tamanho mínimo (3 letras) e stemming básico em português. |
 
 ---
 
-### Compilacao
+### Compilação
 
 ```bash
 javac src/*.java
@@ -66,13 +66,13 @@ javac src/*.java
 
 ---
 
-### Execucao
+### Execução
 
 ```bash
 java -cp src Main <diretorio_documentos> <limiar> <modo> [argumentos_opcionais]
 ```
 
-#### Modos disponiveis:
+#### Modos disponíveis:
 
 **Lista:** Compara todos os arquivos e mostra pares com similaridade acima do limiar:
 ```bash
@@ -87,13 +87,13 @@ java -cp src Main documentos/ 0.5 lista
 java -cp src Main documentos/ 0.0 ranking 5
 ```
 
-**Comparar:** Compara dois arquivos especificos:
+**Comparar:** Compara dois arquivos específicos:
 ```bash
 java -cp src Main documentos/ 0.0 comparar doc1.txt doc4.txt
 ```
 
 ---
 
-### Saida
+### Saída
 
-O programa imprime os resultados no terminal e salva automaticamente no arquivo `resultado.txt`. Os valores de similaridade sao exibidos em percentual (ex: `72.50%`).
+O programa imprime os resultados no terminal e salva automaticamente no arquivo `resultado.txt`. Os valores de similaridade são exibidos em percentual (ex: `72.50%`).
