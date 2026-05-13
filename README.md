@@ -74,7 +74,7 @@ java -cp src Main <diretorio_documentos> <limiar> <modo> [argumentos_opcionais]
 
 #### Modos disponiveis:
 
-**Lista** — Compara todos os arquivos e mostra pares com similaridade acima do limiar:
+**Lista:** Compara todos os arquivos e mostra pares com similaridade acima do limiar:
 ```bash
 java -cp src Main documentos/ 0.0 lista
 ```
@@ -82,12 +82,12 @@ java -cp src Main documentos/ 0.0 lista
 java -cp src Main documentos/ 0.5 lista
 ```
 
-**Ranking** — Mostra os K pares mais similares:
+**Ranking:** Mostra os K pares mais similares:
 ```bash
 java -cp src Main documentos/ 0.0 ranking 5
 ```
 
-**Comparar** — Compara dois arquivos especificos:
+**Comparar:** Compara dois arquivos especificos:
 ```bash
 java -cp src Main documentos/ 0.0 comparar doc1.txt doc4.txt
 ```
